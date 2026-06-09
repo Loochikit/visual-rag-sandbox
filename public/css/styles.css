@@ -448,14 +448,14 @@ canvas {
 /* Mini charts in SRE dashboard */
 .charts-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  max-height: 220px;
+  grid-template-columns: 1fr 1fr; /* Side-by-side charts to maximize vertical space */
+  gap: 0.75rem;
+  max-height: 140px;
   overflow: hidden;
 }
 
 .chart-container {
-  height: 90px;
+  height: 85px;
   position: relative;
 }
 
