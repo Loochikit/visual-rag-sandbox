@@ -185,20 +185,18 @@
         <div class="card-title">📊 SRE Observability Telemetry</div>
         
         <!-- Live Graphs -->
+        <div style="display: flex; gap: 0.5rem; justify-content: space-between; font-size: 0.75rem; border-bottom: 1px solid var(--card-border); padding-bottom: 0.25rem; margin-bottom: 0.5rem;">
+          <div>Queries: <span id="valTotalQueries" style="color: var(--accent-cyan); font-weight: bold;">0</span></div>
+          <div>Avg Latency: <span id="valAvgLatency" style="color: var(--accent-cyan); font-weight: bold;">0 ms</span></div>
+          <div>Total Cost: <span id="valTotalCost" style="color: var(--accent-orange); font-weight: bold;">$0.00000</span></div>
+        </div>
+        
         <div class="charts-grid">
-          <div style="display: flex; gap: 0.5rem; justify-content: space-between; font-size: 0.75rem; border-bottom: 1px solid var(--card-border); padding-bottom: 0.25rem;">
-            <div>Queries: <span id="valTotalQueries" style="color: var(--accent-cyan); font-weight: bold;">0</span></div>
-            <div>Avg Latency: <span id="valAvgLatency" style="color: var(--accent-cyan); font-weight: bold;">0 ms</span></div>
-            <div>Total Cost: <span id="valTotalCost" style="color: var(--accent-orange); font-weight: bold;">$0.00000</span></div>
-          </div>
           <div class="chart-container">
             <canvas id="latencyChart"></canvas>
           </div>
           <div class="chart-container">
             <canvas id="scoreChart"></canvas>
-          </div>
-          <div class="chart-container" style="display: none;">
-            <canvas id="costChart"></canvas>
           </div>
         </div>
 
