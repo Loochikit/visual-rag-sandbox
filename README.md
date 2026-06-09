@@ -4,7 +4,7 @@
 
 Built natively in Node.js, the system runs completely offline out-of-the-box using a custom, in-memory **TF-IDF vector index** and local similarity calculators. It also supports live integrations (OpenAI, Gemini, and Ollama) with secure client-side API routing.
 
-[![Deploy to Render]!](https://visual-rag-sandbox.onrender.com)
+[!Deploy to Render!](https://visual-rag-sandbox.onrender.com)
 
 ---
 
